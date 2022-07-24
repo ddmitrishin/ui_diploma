@@ -1,0 +1,82 @@
+plugins {
+    id 'java-library'
+    id 'io.qameta.allure' version '2.8.1'
+}
+
+repositories {
+    mavenCentral()
+}
+
+def allureVersion = "2.14.0",
+    selenideVersion = "5.24.0",
+    junitVersion = "5.7.2",
+    javaFakerVersion = "1.0.2",
+    postgreVersion = "42.1.4",
+    springJDBCVersion = "5.3.20",
+    ownerVersion = "1.0.12",
+    assertjVersion = "3.19.0",
+    slf4jVersion = "1.7.29",
+    aspectjweaverVersion = "1.9.6",
+    restAssuredVersion = "4.3.1"
+
+allure {
+    version = allureVersion
+    autoconfigure = true
+    aspectjweaver = true
+    configuration = "testImplementation"
+
+    useJUnit5 {
+        version = allureVersion
+    }
+}
+
+dependencies {
+    testImplementation(
+            "org.aspectj:aspectjweaver:$aspectjweaverVersion",
+            "com.codeborne:selenide:$selenideVersion",
+            "io.qameta.allure:allure-selenide:$allureVersion",
+            "io.rest-assured:rest-assured:$restAssuredVersion",
+            "io.qameta.allure:allure-rest-assured:$allureVersion",
+            "com.github.javafaker:javafaker:$javaFakerVersion",
+            "org.aeonbits.owner:owner:$ownerVersion",
+            "org.assertj:assertj-core:$assertjVersion",
+            "org.junit.jupiter:junit-jupiter:$junitVersion",
+            "org.postgresql:postgresql:$postgreVersion",
+            "org.slf4j:slf4j-simple:$slf4jVersion",
+            "org.springframework:spring-jdbc:$springJDBCVersion"
+    )
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+tasks.withType(Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform()
+
+    if (System.getProperty("threads") != null) {
+        systemProperties += [
+                'junit.jupiter.execution.parallel.enabled'                 : true,
+                'junit.jupiter.execution.parallel.mode.default'            : 'concurrent',
+                'junit.jupiter.execution.parallel.mode.classes.default'    : 'concurrent',
+                'junit.jupiter.execution.parallel.config.strategy'         : 'fixed',
+                'junit.jupiter.execution.parallel.config.fixed.parallelism': System.getProperty("threads").toInteger()
+        ]
+    }
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
+
+task auth(type: Test) {
+    useJUnitPlatform {
+        includeTags 'auth'
+    }
+}
