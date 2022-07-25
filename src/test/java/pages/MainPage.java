@@ -1,6 +1,5 @@
 package pages;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.text;
@@ -32,6 +31,14 @@ public class MainPage {
         partnersPageButton.click();
     }
 
+    public void goToProjectsPage() {
+        projectsPageButton.click();
+    }
+
+    public void goToCareerPage() {
+        careerPageButton.click();
+    }
+
     public void goToServicePage() {
         servicesPageButton.click();
     }
@@ -56,5 +63,10 @@ public class MainPage {
 
     public void checkEnLanguage() {
         mainTitleEndlish.shouldHave(text("Software development"));
+    }
+
+    public void chooseFeedbackPage() {
+        aboutCompanyButton.hover();
+        feedbackButton.click();
     }
 }

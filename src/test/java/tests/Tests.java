@@ -38,6 +38,54 @@ public class Tests extends TestBase {
     }
 
     @Test
+    @DisplayName("Open Feedback page from drop-down list 'About company'")
+    @Feature("Main Page")
+    void testOpenFeedbackPage() {
+        step("Open main page https://www.appliedtech.ru/", () ->
+                open(""));
+        step("Choose feedback fro drop-down list", () ->
+                mainPage.chooseFeedbackPage());
+        step("Verified that feedback open", () ->
+                feedbackPage.checkFeedbackTitle());
+    }
+
+    @Test
+    @DisplayName("Check content of Partners Page")
+    @Feature("Main Page")
+    void testcontentPartnersPage() {
+        step("Open main page https://www.appliedtech.ru/", () ->
+                open(""));
+        step("Go to Partners Page", () ->
+                mainPage.goToPartnersPage());
+        step("Verified that Partners Page open", () ->
+                partnersPage.checkPartnersTitle());
+    }
+
+    @Test
+    @DisplayName("Check content of Career Page")
+    @Feature("Main Page")
+    void testcontentCareerPage() {
+        step("Open main page https://www.appliedtech.ru/", () ->
+                open(""));
+        step("Go to Career Page", () ->
+                mainPage.goToCareerPage());
+        step("Verified that Career Page open", () ->
+                careerPage.checkCareerTitle());
+    }
+
+    @Test
+    @DisplayName("Check content of Project Page")
+    @Feature("Main Page")
+    void testcontentProjectPage() {
+        step("Open main page https://www.appliedtech.ru/", () ->
+                open(""));
+        step("Go to Project Page", () ->
+                mainPage.goToProjectsPage());
+        step("Verified that Project Page open", () ->
+                projectsPage.checkprojectsTitle());
+    }
+
+    @Test
     @DisplayName("Send request to company")
     @Feature("Service Page")
     void testSendRequest() {

@@ -14,31 +14,32 @@ import static com.codeborne.selenide.WebDriverRunner.closeWebDriver;
 import static io.qameta.allure.Allure.step;
 
 public class TestBase {
-        MainPage mainPage = new MainPage();
-        CareerPage careerPage = new CareerPage();
-        PartnersPage partnersPage = new PartnersPage();
-        ProjectsPage projectsPage = new ProjectsPage();
-        ServicesPage servicesPage = new ServicesPage();
+    MainPage mainPage = new MainPage();
+    CareerPage careerPage = new CareerPage();
+    PartnersPage partnersPage = new PartnersPage();
+    ProjectsPage projectsPage = new ProjectsPage();
+    ServicesPage servicesPage = new ServicesPage();
+    FeedbackPage feedbackPage = new FeedbackPage();
 
-        @BeforeAll
-        static void beforeAll() {
-            SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-            DriverSettings.configure();
-        }
+    @BeforeAll
+    static void beforeAll() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        DriverSettings.configure();
+    }
 
-        @BeforeEach
-        void openAppliedTech() {
-            step("open appliedtech", () -> {
-                open("");
-            });
-        }
+    @BeforeEach
+    void openAppliedTech() {
+        step("open appliedtech", () -> {
+            open("");
+        });
+    }
 
-        @AfterEach
-        void addAttachments() {
-            Attach.takeScreenshot("Last screenshot");
-            Attach.pageSource();
-            Attach.browserConsoleLogs();
-            Attach.addVideo();
-            closeWebDriver();
-        }
+    @AfterEach
+    void addAttachments() {
+        Attach.takeScreenshot("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
+        closeWebDriver();
+    }
 }
