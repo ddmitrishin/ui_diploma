@@ -90,7 +90,7 @@ public class Tests extends TestBase {
     @Test
     @DisplayName("Send request to company")
     @Feature("Service Page")
-    void SendRequestTest() {
+    void sendRequestTest() {
         step("Open main page https://www.appliedtech.ru/", () ->
                 open(""));
         step("Go to Service page", () ->
