@@ -23,13 +23,16 @@
 
 ### UI
 
-- [x] Проверка открытия страницы по тексту в заголовке
-- [x] Проверка на ошибки в консоль логах страницы
-- [x] Проверка перехода на страницу партнеров
-- [x] Проверка на смену языка
-- [x] Проверка перехода на страницу отзывов через выпадающий список
+- [x] Open main page when press on title
+- [x] Page console log should not have errors
+- [x] Check content of Partners Page
+- [x] Change Language to English
+- [x] Open Feedback page from drop-down list 'About company'
+- [x] Send request to company
+- [x] Check content of Project Page
+- [x] Check content of Career Page
 
-## :computer: Технологический стек
+## :computer:  Technology stack
 
 <p align="center">
 <img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
@@ -53,10 +56,9 @@
         State5: GitHub
         State6: Jenkins
         State7: Selenoid
-        State8: Allure Report
-        State9: Allure TestOps
-        State10: Telegram
-        State11: STOP
+        State8: Allure Report and Allure TestOps
+        State9: Telegram
+        State10: STOP
         State1 --> State2
         State2 --> State3
         State3 --> State4
@@ -66,17 +68,16 @@
         State7 --> State8
         State8 --> State9
         State9 --> State10
-        State10 --> State11
-        State9 --> State6
-        note right of State2 : Работа с кодом
-        note left of State3 : Фреймворки
-        note right of State4 : Сборка проекта
-        note left of State5 : Система контроля версий и хостинг проекта
-        note right of State6 : Параметризация и запуск сборки
-        note left of State7 : Контейнеризация
-        note right of State8&State9: Отчётность
-        note left of State10 : Уведомления
+        note right of State2 : Working with code
+        note left of State3 : Frameworks
+        note right of State4 : Project build
+        note left of State5 : Version control system and project hosting
+        note right of State6 : Parameterization and run build
+        note left of State7 : Containerization
+        note right of State8 : Reporting
+        note left of State9 : Notifications
 ```
+
 ## :technologist: Запуск тестов из терминала
 
 ### Локальный запуск тестов
