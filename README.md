@@ -52,16 +52,18 @@
         State4: Gradle
         State5: GitHub
         State6: Jenkins
-        State7: Selenoid
-        State8: Allure Report
-        State9: Telegram
-        State10: STOP
+        State7: Allure TestOps
+        State8: Selenoid
+        State9: Allure Report
+        State10: Telegram
+        State11: STOP
         State1 --> State2
         State2 --> State3
         State3 --> State4
         State4 --> State5
         State5 --> State6
         State6 --> State7
+        State6 --> State8
         State7 --> State8
         State8 --> State9
         State9 --> State10
