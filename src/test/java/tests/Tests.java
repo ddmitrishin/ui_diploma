@@ -2,7 +2,6 @@ package tests;
 
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
-import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -29,10 +28,11 @@ public class Tests extends TestBase {
     @DisplayName("Change Language")
     @Feature("Main Page")
     void changeLanguage() {
-        step("Open main page https://www.appliedtech.ru/");
-        step("Change Language to English", ()->
+        step("Open main page https://www.appliedtech.ru/", () ->
+                open(""));
+        step("Change Language to English", () ->
                 mainPage.changeLanguageToEnglish());
-        step("Verified that language changed", ()->
+        step("Verified that language changed", () ->
                 mainPage.checkEnLanguage());
     }
 }
