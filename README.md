@@ -74,7 +74,7 @@
         note left of State5 : Система контроля версий и хостинг проекта
         note right of State6 : Параметризация и запуск сборки
         note left of State7 : Контейнеризация
-        note right of State9 : Отчётность
+        note right of State8 : Отчётность
         note left of State10 : Уведомления
 ```
 ## :technologist: Запуск тестов из терминала
