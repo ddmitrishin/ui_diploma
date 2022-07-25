@@ -11,7 +11,8 @@ def allureVersion = "2.17.3",
     junitVersion = "5.8.2",
     slf4jVersion = "1.7.32",
     assertjVersion = "3.19.0",
-    ownerVersion = "1.0.12"
+    ownerVersion = "1.0.12",
+    fakerVersion = "1.0.2"
 
 
 allure {
@@ -32,8 +33,7 @@ dependencies {
     testImplementation(
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
-            "io.qameta.allure:allure-java-commons:2.14.0",
-            "commons-io:commons-io:2.6",
+            "com.github.javafaker:javafaker:1.0.2",
             "org.assertj:assertj-core:$assertjVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion")

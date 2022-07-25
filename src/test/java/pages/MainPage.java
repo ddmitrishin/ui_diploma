@@ -21,6 +21,7 @@ public class MainPage {
             aboutCompanyButton = $(byText("О компании")),
             feedbackButton = $(byText("Отзывы")),
             mainTitle = $(".about-teaser__left"),
+            mainTitleEndlish = $(".hero__title"),
             logoButton = $(".index-logo-img");
 
     public void openMainPage() {
@@ -47,5 +48,9 @@ public class MainPage {
 
     public void checkTitleMainPage() {
         mainTitle.shouldHave(text("О компании"));
+    }
+
+    public void checkEnLanguage() {
+        mainTitleEndlish.shouldHave(text("Software development"));
     }
 }
