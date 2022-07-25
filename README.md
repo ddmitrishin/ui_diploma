@@ -162,4 +162,4 @@ test
   <img title="Selenoid Video" src="images/gif/657f38371d02e78d321704cc37755f8e.gif">
 </p>
 
-:blue_heart: <a target="_blank" href="https://t.me/YuriyMqa">t.me/dmitrishin13</a>
+<a target="_blank" href="https://t.me/YuriyMqa">t.me/dmitrishin13</a>
