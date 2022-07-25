@@ -29,7 +29,7 @@ public class TestBase {
         @BeforeEach
         void openAppliedTech() {
             step("open appliedtech", () -> {
-                open("https://www.appliedtech.ru/");
+                open("");
             });
         }
 
