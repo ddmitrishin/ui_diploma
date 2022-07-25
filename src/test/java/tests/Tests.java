@@ -17,7 +17,7 @@ public class Tests extends TestBase {
     @AllureId("11616")
     @DisplayName("Open main page when press on title")
     @Feature("Main Page")
-    void testOpenMainPageFromTitleTest() {
+    void openMainPageFromTitleTest() {
         step("Open page https://www.appliedtech.ru/", () ->
                 open(""));
         step("Press on title", () ->
@@ -30,7 +30,7 @@ public class Tests extends TestBase {
     @AllureId("11617")
     @DisplayName("Change Language to English")
     @Feature("Main Page")
-    void testChangeLanguage() {
+    void changeLanguageTest() {
         step("Open main page https://www.appliedtech.ru/", () ->
                 open(""));
         step("Change Language to English", () ->
@@ -42,7 +42,7 @@ public class Tests extends TestBase {
     @Test
     @DisplayName("Open Feedback page from drop-down list 'About company'")
     @Feature("Feedback Page")
-    void testOpenFeedbackPage() {
+    void openFeedbackPageTest() {
         step("Open main page https://www.appliedtech.ru/", () ->
                 open(""));
         step("Choose feedback fro drop-down list", () ->
@@ -54,7 +54,7 @@ public class Tests extends TestBase {
     @Test
     @DisplayName("Check content of Partners Page")
     @Feature("Partners Page")
-    void testcontentPartnersPage() {
+    void contentPartnersPageTest() {
         step("Open main page https://www.appliedtech.ru/", () ->
                 open(""));
         step("Go to Partners Page", () ->
@@ -66,7 +66,7 @@ public class Tests extends TestBase {
     @Test
     @DisplayName("Check content of Career Page")
     @Feature("Career Page")
-    void testcontentCareerPage() {
+    void contentCareerPageTest() {
         step("Open main page https://www.appliedtech.ru/", () ->
                 open(""));
         step("Go to Career Page", () ->
@@ -78,7 +78,7 @@ public class Tests extends TestBase {
     @Test
     @DisplayName("Check content of Project Page")
     @Feature("Project Page")
-    void testcontentProjectPage() {
+    void contentProjectPageTest() {
         step("Open main page https://www.appliedtech.ru/", () ->
                 open(""));
         step("Go to Project Page", () ->
@@ -90,7 +90,7 @@ public class Tests extends TestBase {
     @Test
     @DisplayName("Send request to company")
     @Feature("Service Page")
-    void testSendRequest() {
+    void SendRequestTest() {
         step("Open main page https://www.appliedtech.ru/", () ->
                 open(""));
         step("Go to Service page", () ->
