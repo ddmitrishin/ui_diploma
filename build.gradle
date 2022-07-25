@@ -33,7 +33,7 @@ dependencies {
     testImplementation(
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
-            "com.github.javafaker:javafaker:1.0.2",
+            "com.github.javafaker:javafaker:$fakerVersion",
             "org.assertj:assertj-core:$assertjVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion")
