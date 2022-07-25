@@ -39,7 +39,7 @@ public class Tests extends TestBase {
 
     @Test
     @DisplayName("Open Feedback page from drop-down list 'About company'")
-    @Feature("Main Page")
+    @Feature("Feedback Page")
     void testOpenFeedbackPage() {
         step("Open main page https://www.appliedtech.ru/", () ->
                 open(""));
@@ -51,7 +51,7 @@ public class Tests extends TestBase {
 
     @Test
     @DisplayName("Check content of Partners Page")
-    @Feature("Main Page")
+    @Feature("Partners Page")
     void testcontentPartnersPage() {
         step("Open main page https://www.appliedtech.ru/", () ->
                 open(""));
@@ -63,7 +63,7 @@ public class Tests extends TestBase {
 
     @Test
     @DisplayName("Check content of Career Page")
-    @Feature("Main Page")
+    @Feature("Career Page")
     void testcontentCareerPage() {
         step("Open main page https://www.appliedtech.ru/", () ->
                 open(""));
@@ -75,7 +75,7 @@ public class Tests extends TestBase {
 
     @Test
     @DisplayName("Check content of Project Page")
-    @Feature("Main Page")
+    @Feature("Project Page")
     void testcontentProjectPage() {
         step("Open main page https://www.appliedtech.ru/", () ->
                 open(""));
