@@ -32,6 +32,8 @@ dependencies {
     testImplementation(
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
+            "io.qameta.allure:allure-java-commons:2.14.0",
+            "commons-io:commons-io:2.6",
             "org.assertj:assertj-core:$assertjVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion")
