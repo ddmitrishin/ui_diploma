@@ -15,7 +15,7 @@ public class Tests extends TestBase {
     @AllureId("11616")
     @DisplayName("Open main page when press on title")
     @Feature("Main Page")
-    void openMainPageFromTitleTest() {
+    void testOpenMainPageFromTitleTest() {
         step("Open page https://www.appliedtech.ru/", () ->
                 open(""));
         step("Press on title", () ->
@@ -28,7 +28,7 @@ public class Tests extends TestBase {
     @AllureId("11617")
     @DisplayName("Change Language to English")
     @Feature("Main Page")
-    void changeLanguage() {
+    void testChangeLanguage() {
         step("Open main page https://www.appliedtech.ru/", () ->
                 open(""));
         step("Change Language to English", () ->
@@ -40,7 +40,7 @@ public class Tests extends TestBase {
     @Test
     @DisplayName("Send request to company")
     @Feature("Service Page")
-    void sendRequest() {
+    void testSendRequest() {
         step("Open main page https://www.appliedtech.ru/", () ->
                 open(""));
         step("Go to Service page", () ->
