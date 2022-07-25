@@ -52,9 +52,9 @@
         State4: Gradle
         State5: GitHub
         State6: Jenkins
-        State7: Allure TestOps
-        State8: Selenoid
-        State9: Allure Report
+        State7: Selenoid
+        State8: Allure Report
+        State9: Allure TestOps
         State10: Telegram
         State11: STOP
         State1 --> State2
@@ -63,10 +63,10 @@
         State4 --> State5
         State5 --> State6
         State6 --> State7
-        State6 --> State8
         State7 --> State8
         State8 --> State9
         State9 --> State10
+        State10 --> State11
         note right of State2 : Работа с кодом
         note left of State3 : Фреймворки
         note right of State4 : Сборка проекта
