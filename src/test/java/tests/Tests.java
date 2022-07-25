@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
+import static tests.TestData.*;
 
 public class Tests extends TestBase {
 
@@ -25,7 +26,7 @@ public class Tests extends TestBase {
 
     @Test
     @AllureId("11617")
-    @DisplayName("Change Language")
+    @DisplayName("Change Language to English")
     @Feature("Main Page")
     void changeLanguage() {
         step("Open main page https://www.appliedtech.ru/", () ->
@@ -34,5 +35,18 @@ public class Tests extends TestBase {
                 mainPage.changeLanguageToEnglish());
         step("Verified that language changed", () ->
                 mainPage.checkEnLanguage());
+    }
+
+    @Test
+    @DisplayName("Send request to company")
+    @Feature("Service Page")
+    void sendRequest() {
+        step("Open main page https://www.appliedtech.ru/", () ->
+                open(""));
+        step("Go to Service page", () ->
+                mainPage.goToServicePage());
+        step("Fill form", () ->
+                servicesPage.sendRequest(RANDOM_FIRST_NAME, RANDOM_COMPANY_NAME, RANDOM_EMAIL, RANDOM_DESCRIPTION));
+        step("Send form");
     }
 }

@@ -32,6 +32,10 @@ public class MainPage {
         partnersPageButton.click();
     }
 
+    public void goToServicePage() {
+        servicesPageButton.click();
+    }
+
     public void changeLanguageToEnglish() {
         languageSelector.click();
         landuageENSelector.click();
