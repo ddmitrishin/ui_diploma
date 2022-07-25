@@ -110,7 +110,7 @@ test
 ## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Jenkins Build Main Page
 
 <p align="center">
-  <img src="images/screenshots/Screenshot_1_main_jenkins.jpg">
+  <img src="images/screenshots/JenkinsMainPAge.jpg">
 </p>
 
 ## <img width="4%" title="Allure Report" src="images/logo/Allure_Report.svg"> Test results report in Allure Report
@@ -118,20 +118,20 @@ test
 ### :pushpin: Main page of the Allure report
 
 <p align="center">
-<img title="Allure Overview" src="images/screenshots/Screenshot_2_allure_report.jpg">
+<img title="Allure Overview" src="images/screenshots/mainDachboardAR.jpg">
 </p>
 
 ### :pushpin: Page with tests
 
 
 <p align="center">
-<img title="Allure Behaviors" src="images/screenshots/Screenshot_3_tests.jpg">
+<img title="Allure Behaviors" src="images/screenshots/pageWithTests.jpg">
 </p>
 
 ### :pushpin: Window with charts
 
 <p align="center">
-<img width="30%"  title="Allure Overview Dashboard" src="images/screenshots/Screenshot_4_dashboard.jpg">
+<img width="30%"  title="Allure Overview Dashboard" src="images/screenshots/chartsAR.jpg">
 </p>
 
 
@@ -141,14 +141,14 @@ test
 ### :pushpin: Test cases with launch history
 
 <p align="center">
-<img title="Allure Overview" src="images/screenshots/Screenshot_2_allure_report.jpg">
+<img title="Allure Overview" src="images/screenshots/ATestOpstestcase.jpg">
 </p>
 
 ### :pushpin: Dashboard
 
 
 <p align="center">
-<img title="Allure Behaviors" src="images/screenshots/Screenshot_3_tests.jpg">
+<img title="Allure Behaviors" src="images/screenshots/ATestOpsDash.jpg">
 </p>
 
 
@@ -157,14 +157,14 @@ test
 
 > After the build is completed, the bot created in <code>Telegram</code> automatically processes and sends a message with a report.
 <p align="center">
-<img width="30%"  title="Telegram Notifications" src="images/screenshots/Screenshot_5_telegram_bot.jpg">
+<img width="30%"  title="Telegram Notifications" src="images/screenshots/telegramBot.jpg">
 </p>
 
 ## <img width="4%" title="Selenoid" src="images/logo/Selenoid.svg"> An example of running a test in Selenoid
 
 > A video is attached to each test in the report. One of these videos is shown below. Test case for checking the sending of an application to the company
 <p align="center">
-  <img title="Selenoid Video" src="images/gif/26ab0f72fd334309.gif">
+  <img title="Selenoid Video" src="images/gif/657f38371d02e78d321704cc37755f8e.gif">
 </p>
 
 :blue_heart: <a target="_blank" href="https://t.me/YuriyMqa">t.me/dmitrishin13</a>
