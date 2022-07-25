@@ -128,7 +128,7 @@ test
 <img title="Allure Behaviors" src="images/screenshots/Screenshot_3_tests.jpg">
 </p>
 
-### :pushpin: Основной дашборд
+### :pushpin: Window with charts
 
 <p align="center">
 <img width="30%"  title="Allure Overview Dashboard" src="images/screenshots/Screenshot_4_dashboard.jpg">

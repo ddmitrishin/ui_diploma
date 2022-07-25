@@ -5,6 +5,7 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
+import static io.qameta.allure.Allure.step;
 
 public class ServicesPage {
     private final SelenideElement servicesHeader = $(".section"),
@@ -19,10 +20,11 @@ public class ServicesPage {
     }
 
     public void sendRequest(String name, String companyName, String email, String description) {
-        sendRequestButton.click();
-        nameInputField.sendKeys(name);
-        companyInputField.sendKeys(companyName);
-        emailInputField.sendKeys(email);
-        descriptionInputField.sendKeys(description);
+        step("Click on 'Request' button", () ->
+                sendRequestButton.click());
+        step("Enter 'Name'", () -> nameInputField.sendKeys(name));
+        step("Enter 'Company Name'", () -> companyInputField.sendKeys(companyName));
+        step("Enter 'Email'", () -> emailInputField.sendKeys(email));
+        step("Enter 'Description'", () -> descriptionInputField.sendKeys(description));
     }
 }
