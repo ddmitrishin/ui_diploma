@@ -1,5 +1,6 @@
 package tests;
 
+import helpers.DriverUtils;
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
@@ -7,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static tests.TestData.*;
 
 public class Tests extends TestBase {
@@ -96,5 +98,17 @@ public class Tests extends TestBase {
         step("Fill form", () ->
                 servicesPage.sendRequest(RANDOM_FIRST_NAME, RANDOM_COMPANY_NAME, RANDOM_EMAIL, RANDOM_DESCRIPTION));
         step("Send form");
+    }
+
+    @Test
+    @DisplayName("Page console log should not have errors")
+    @Feature("Others")
+    void consoleShouldNotHaveErrorsTest() {
+        step("Console logs should not contain text 'SEVERE'", () -> {
+            String consoleLogs = DriverUtils.getConsoleLogs();
+            String errorText = "SEVERE";
+
+            assertThat(consoleLogs).doesNotContain(errorText);
+        });
     }
 }
