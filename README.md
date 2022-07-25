@@ -8,17 +8,15 @@
 
 ➠ [Running tests from the terminal](#technologist-running-tests-from-the-terminal)
 
-➠ [Remote Test Run](#Remote-Test-Run)
+➠ [Build in Jenkins](#-jenkins-build-main-page)
 
-➠ [Build in Jenkins](#Build-in-Jenkins)
+➠ [Test results report in Allure Report](#-test-results-report-in-allure-report)
 
-➠ [Test results report in Allure Report](#Test-results-report-in-allure-report)
+➠ [Integration with Allure TestOps](#-integration-with-allure-testops)
 
-➠ [Test results report in Allure TestOps](#Test-results-report-in-allure-TestOps)
+➠ [Telegram notifications using a bot](#-telegram-notifications-using-a-bot)
 
-➠ [Telegram notifications using a bot](#Telegram-notifications-using-a-bot)
-
-➠ [An example of running a test in Selenoid](#An-example-of-running-a-test-in-Selenoid)
+➠ [An example of running a test in Selenoid](#-an-example-of-running-a-test-in-selenoid)
 ## <a name="globe_with_meridians-covered-functionality"></a>:globe_with_meridians: Covered functionality
 
 ### UI
@@ -32,7 +30,7 @@
 - [x] Check content of Project Page
 - [x] Check content of Career Page
 
-## :computer:  Technology stack
+## :computer: Technology stack
 
 <p align="center">
 <img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
@@ -44,7 +42,7 @@
 <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
 <img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
 <img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
-<img width="6%" title="Allure Report" src="images/logo/alluretestops.svg">
+<img width="6%" title="Allure TestOps" src="images/logo/alluretestops.svg">
 <img width="6%" title="Telegram" src="images/logo/Telegram.svg">
 </p>
 
@@ -104,9 +102,6 @@ test
 >
 
 
-
-
-
 ## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Jenkins Build Main Page
 
 <p align="center">
@@ -136,7 +131,7 @@ test
 
 
 
-## <img width="4%" title="Allure Report" src="images/logo/Allure_Report.svg"> Integration with AllureTestOps
+## <img width="4%" title="Allure TestOps" src="images/logo/alluretestops.svg"> Integration with Allure TestOps
 
 ### :pushpin: Test cases with launch history
 
