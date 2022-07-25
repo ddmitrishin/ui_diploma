@@ -14,9 +14,9 @@
 
 ➠ [Test results report in Allure Report](#-Test-results-report-in-allure-report)
 
-➠ [Test results report in Allure Report](#-Test-results-report-in-allure-report)
+➠ [Test results report in Allure TestOps](#-Test-results-report-in-allure-TestOps)
 
-➠ [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
+➠ [Telegram notifications using a bot](#-Telegram-notifications-using-a-bot)
 
 ➠ [An example of running a test in Selenoid](#-An-example-of-running-a-test-in-Selenoid)
 ## <a name="globe_with_meridians-covered-functionality"></a>:globe_with_meridians: Covered functionality
@@ -44,6 +44,7 @@
 <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
 <img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
 <img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
+<img width="6%" title="Allure Report" src="images/logo/alluretestops.svg">
 <img width="6%" title="Telegram" src="images/logo/Telegram.svg">
 </p>
 
