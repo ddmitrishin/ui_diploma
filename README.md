@@ -8,17 +8,17 @@
 
 ➠ [Running tests from the terminal](#technologist-running-tests-from-the-terminal)
 
-➠ [Remote Test Run](#удаленный-Remote-Test-Run)
+➠ [Remote Test Run](#Remote-Test-Run)
 
-➠ [Build in Jenkins](#-Главная-Build-in-Jenkins)
+➠ [Build in Jenkins](#Build-in-Jenkins)
 
-➠ [Test results report in Allure Report](#-Test-results-report-in-allure-report)
+➠ [Test results report in Allure Report](#Test-results-report-in-allure-report)
 
-➠ [Test results report in Allure TestOps](#-Test-results-report-in-allure-TestOps)
+➠ [Test results report in Allure TestOps](#Test-results-report-in-allure-TestOps)
 
-➠ [Telegram notifications using a bot](#-Telegram-notifications-using-a-bot)
+➠ [Telegram notifications using a bot](#Telegram-notifications-using-a-bot)
 
-➠ [An example of running a test in Selenoid](#-An-example-of-running-a-test-in-Selenoid)
+➠ [An example of running a test in Selenoid](#An-example-of-running-a-test-in-Selenoid)
 ## <a name="globe_with_meridians-covered-functionality"></a>:globe_with_meridians: Covered functionality
 
 ### UI
