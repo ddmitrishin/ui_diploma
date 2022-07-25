@@ -67,14 +67,15 @@
         State8 --> State9
         State9 --> State10
         State10 --> State11
+        State9 --> State6
         note right of State2 : Работа с кодом
         note left of State3 : Фреймворки
         note right of State4 : Сборка проекта
         note left of State5 : Система контроля версий и хостинг проекта
         note right of State6 : Параметризация и запуск сборки
         note left of State7 : Контейнеризация
-        note right of State8 : Отчётность
-        note left of State9 : Уведомления
+        note right of State9 : Отчётность
+        note left of State10 : Уведомления
 ```
 ## :technologist: Запуск тестов из терминала
 
