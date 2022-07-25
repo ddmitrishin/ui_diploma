@@ -79,58 +79,49 @@
         note left of State9 : Notifications
 ```
 
-## :technologist: Запуск тестов из терминала
+## :technologist: Running tests from the terminal
 
-### Локальный запуск тестов
+### Local test run:
 
 ```
 gradle clean test
 ```
 
-### Удаленный запуск тестов
+### Remote test run:
 
 ```
-clean test
--Dbrowser=${BROWSER}
--DbrowserVersion=${BROWSER_VERSION}
--DbrowserSize=${BROWSER_SIZE}
--DremoteDriverUrl=https://${REMOTE_DRIVER_URL}/wd/hub/
--DvideoStorage=https://${REMOTE_DRIVER_URL}/video/
--Dthreads=${THREADS}
+clean
+test
+ -Dbrowser=${BROWSER}
+ -DbrowserSize=${BROWSER_SIZE}
 ```
 
-### Параметры сборки
+### Build Options
 
-> <code>BROWSER</code> – браузер, в котором будут выполняться тесты (_по умолчанию - <code>chrome</code>_).
+> <code>BROWSER</code> – the browser in which the tests will be run (_default - <code>chrome</code>_).
 >
-> <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты (_по умолчанию - <code>1920x1080</code>_).
->
-> <code>BROWSER_VERSION</code> – версия браузера (_по умолчанию - <code>99</code>_).
->
-> <code>REMOTE_DRIVER_URL</code> – url селеноида.
->
-> <code>THREADS</code> – кол-во потоков для параллельного запуска.
+> <code>BROWSER_SIZE</code> – size of the browser window in which tests will be executed (_default - <code>1920x1080</code>_).
 >
 
 
 
 
 
-## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Главная страница сборки Jenkins
+## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Jenkins Build Main Page
 
 <p align="center">
   <img src="images/screenshots/Screenshot_1_main_jenkins.jpg">
 </p>
 
-## <img width="4%" title="Allure Report" src="images/logo/Allure_Report.svg"> Отчет о результатах тестирования в Allure Report
+## <img width="4%" title="Allure Report" src="images/logo/Allure_Report.svg"> Test results report in Allure Report
 
-### :pushpin: Главная страница Allure-отчета
+### :pushpin: Main page of the Allure report
 
 <p align="center">
 <img title="Allure Overview" src="images/screenshots/Screenshot_2_allure_report.jpg">
 </p>
 
-### :pushpin: Страница с тестами
+### :pushpin: Page with tests
 
 
 <p align="center">
@@ -143,16 +134,35 @@ clean test
 <img width="30%"  title="Allure Overview Dashboard" src="images/screenshots/Screenshot_4_dashboard.jpg">
 </p>
 
-## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
 
-> После завершения сборки бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом.
+
+## <img width="4%" title="Allure Report" src="images/logo/Allure_Report.svg"> Integration with AllureTestOps
+
+### :pushpin: Test cases with launch history
+
+<p align="center">
+<img title="Allure Overview" src="images/screenshots/Screenshot_2_allure_report.jpg">
+</p>
+
+### :pushpin: Dashboard
+
+
+<p align="center">
+<img title="Allure Behaviors" src="images/screenshots/Screenshot_3_tests.jpg">
+</p>
+
+
+
+## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Telegram notifications using a bot
+
+> After the build is completed, the bot created in <code>Telegram</code> automatically processes and sends a message with a report.
 <p align="center">
 <img width="30%"  title="Telegram Notifications" src="images/screenshots/Screenshot_5_telegram_bot.jpg">
 </p>
 
-## <img width="4%" title="Selenoid" src="images/logo/Selenoid.svg"> Пример запуска теста в Selenoid
+## <img width="4%" title="Selenoid" src="images/logo/Selenoid.svg"> An example of running a test in Selenoid
 
-> К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже. Тест кейс на проверку перехода на страницу отзывов через выпадающий список
+> A video is attached to each test in the report. One of these videos is shown below. Test case for checking the sending of an application to the company
 <p align="center">
   <img title="Selenoid Video" src="images/gif/26ab0f72fd334309.gif">
 </p>
