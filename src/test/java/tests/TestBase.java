@@ -6,12 +6,9 @@ import helpers.DriverSettings;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import pages.*;
 
-import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.closeWebDriver;
-import static io.qameta.allure.Allure.step;
 
 public class TestBase {
     MainPage mainPage = new MainPage();
@@ -25,13 +22,6 @@ public class TestBase {
     static void beforeAll() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         DriverSettings.configure();
-    }
-
-    @BeforeEach
-    void openAppliedTech() {
-        step("open appliedtech", () -> {
-            open("");
-        });
     }
 
     @AfterEach
